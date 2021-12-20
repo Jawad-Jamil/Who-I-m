@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+// fonts
+$open: 'Open Sans', sans-serif;
+$pop: 'Poppins', sans-serif;
+
+// colors
+$black: #000002;
+$red: #EF5C6E;
+$mcolor: #6E50F0;
+$ylow: #F8BE2C;
+$white: #FFFFFF;
+$form_bg: #F7F8FC;
+$foot_bg: #F2F5FA;
+$pcolor: #7A7595;
+
+//font-Sizes
+$sec_head: 35px;
+$sub_head: 24px;
+$head_li: 15px;
+$big_name: 60px;
+
+
+//mixins
+
+@mixin flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: $pop;
+}
+
+::after,
+::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    font-family: $open;
+}
+
+section{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+section.top{
+
+    background-image: url(/Images/topBg.jpg);
+    header{
+        @include flex();
+        padding-left: 80px;
+        padding-right: 80px;
+
+        ul.head_ul {
+            list-style: none;
+            @include flex();
+            width: 60%;
+            margin: 0;
+
+            li{
+                a{
+                    text-decoration: none;
+                    color: $black;
+                    text-transform: capitalize;
+                    font-weight: 600;
+                    span{
+                        text-transform: uppercase;
+                    }
+
+                    &.active{
+                        color: $red;
+                    }
+
+                    &.download{
+                        border: 2px solid $red;
+                        padding: 10px 30px;
+                        border-radius: 50px;
+                    }
+
+                }
+            }
+        }
+    }
+
+    section.slider{
+        position: relative;
+        .left_slide{
+            h4.san_hi{
+                font-size: $sec_head;
+                text-transform: capitalize;
+                font-weight: 700;
+            }
+
+            h2.name{
+                font-size: $big_name;
+                text-transform: capitalize;
+                font-weight: 700;
+                font-family: $pop;
+                padding-bottom: 30px;
+                padding-top: 15px;
+            }
+
+            h5{
+                font-weight: 700;
+                font-size: $sub_head;
+                letter-spacing: 1px;
+                span{
+                    color: $mcolor;
+                    font-weight: 600;
+                }
+            }
+            p{
+                color: $pcolor;
+                font-size: 20px;
+                line-height: 30px;
+                padding-top: 35px;
+            }
+
+            .but_a_wrapper {
+                padding-top: 30px;
+                width: 310px;
+
+                button{
+                color: $white;
+                padding: 17px 47px;
+                background-color: $red;
+                border-radius: 50px;
+                border: none;
+                outline: none;
+                text-transform: capitalize;
+                font-size: $head_li;
+                font-weight: 700;
+                cursor: pointer;
+                }
+
+                a.more{
+                    color: $black;
+                    font-weight: 600;
+                    text-transform: capitalize;
+                    position: relative;
+
+                    &::after{
+                        content: "";
+                        position: absolute;
+                        height: 2px;
+                        width: 20px;
+                        background-color: $red;
+                        top: 50%;
+                        right: -30px;
+                    }
+                }
+            } 
+        }
+
+        .right_slide{
+            .pic_wrapper{
+                .img_wrapper{
+                    position: relative;
+
+                    .overlay{
+                        position: absolute;
+                        content: "";
+                        height: 80%;
+                        width: 80%;
+                        left: 31px;
+                        top: 45px;
+                        background-color: #EF5C6E;
+                        transform: rotate(66deg);
+                        opacity: 0.3;
+                    }
+
+                    .outline {
+                        position: absolute;
+                        content: "";
+                        top: 3%;
+                        left: 8%;
+                        height: 85%;
+                        width: 85%;
+                        border: 5px solid $ylow;
+
+
+                        .skill_icon {
+                            height: 90px;
+                            width: 90px;
+                            background-color: white;
+                            border-radius: 50%;
+                            position: absolute;
+                            bottom: -50px;
+                            right: -50px;
+                            @include flex();
+                            flex-direction: column;
+                            justify-content: center;
+                            box-shadow: 2px 2px 20px 0px;
+
+                            i.fas.fa-award {
+                                font-size: 40px;
+                                color: $red;
+                            }
+                        }
+
+                        .five {
+                            height: 100px;
+                            width: 100px;
+                            background-color: white;
+                            border-radius: 50%;
+                            position: absolute;
+                            top: 20px;
+                            right: -50px;
+                            @include flex();
+                            flex-direction: column;
+                            justify-content: center;
+                            box-shadow: 2px 2px 20px 0px;
+
+                            span{
+                                position: relative;
+                                text-align: left;
+                                width: 43px;
+                                line-height: 45px;
+
+                                &::after{
+                                    content: "+";
+                                    position: absolute;
+                                    top: -5px;
+                                    right: -6px;
+                                    font-size: 15px;
+                                    color: $mcolor;
+                                    font-weight: 600;
+                                }
+                            }
+
+                            .num{
+                                color: $mcolor;
+                                font-size: 20px;
+                                line-height: 30px;
+                                font-weight: 600;
+                            }
+
+                            p.msg {
+                                font-weight: 600;
+                                text-align: justify;
+                                font-size: 13px;
+                                width: 43px;
+                                text-transform: capitalize;
+                                line-height: 20px;
+                                margin: 0;
+                                padding: 0;
+                            }
+
+                        }
+
+                        .ten {
+                            height: 140px;
+                            width: 140px;
+                            background-color: white;
+                            border-radius: 50%;
+                            position: absolute;
+                            bottom: -50px;
+                            left: -50px;
+                            @include flex();
+                            flex-direction: column;
+                            justify-content: center;
+                            box-shadow: 2px 2px 20px 0px;
+
+                            p.msg {
+                                font-weight: 600;
+                                text-align: justify;
+                                width: 66px;
+                                line-height: 20px;
+                                margin: 0;
+                                padding: 0;
+                            }
+                            
+                            span{
+                                position: relative;
+                                text-align: left;
+                                width: 66px;
+                                line-height: 45px;
+
+                                &::after{
+                                    content: "+";
+                                    position: absolute;
+                                    top: -8px;
+                                    right: 10px;
+                                    font-size: 25px;
+                                    color: $mcolor;
+                                    font-weight: 600;
+                                }
+                            }
+
+                            .num{
+                                color: $mcolor;
+                                font-size: 40px;
+                                font-weight: 600;
+                            }
+                        }
+
+                    }
+
+                    img{
+                        border-radius: 50%;
+                    }
+                }
+            }
+        }
+
+        .socials{
+            @include flex();
+            transform: rotate(270deg) translateY(-150px);
+            width: 270px;
+            position: absolute;
+            left: 0px;
+            top: 50%;
+            list-style: none;
+            .social_wrapper{ 
+                a{
+                    text-decoration: none;
+                    i{
+                        font-size: $head_li;
+                        color: $mcolor;
+                    }
+    
+                    span{
+                        color: $black;
+                        font-size: $head_li;
+                        font-weight: 700;
+                        text-transform: capitalize;
+                        padding-left: 2px;
+                    }
+                }           
+            }
+        }
+
+
+
+    }
+
+
+}
