@@ -28,7 +28,7 @@ section {
 }
 
 section.top {
-  background-image: url(Images/topBg.jpg);
+  background-image: url(/Images/topBg.jpg);
 }
 
 section.top header {
