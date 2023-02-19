@@ -53,12 +53,15 @@ h1,h2,h3,h4,h5,h6{
 
 section{
     padding-top: 80px;
-    padding-bottom: 80px;
+    padding-bottom: 20px;
+}
+
+body{
+    background-image: url(https://i.ibb.co/mJ1sYRB/Vector-hexagons-pattern-Geometric-abstract-background-with-simple-hexagonal-elements-Medical-technol.jpg);
 }
 
 section.top{
 
-    background-image: url(https://i.ibb.co/mJ1sYRB/Vector-hexagons-pattern-Geometric-abstract-background-with-simple-hexagonal-elements-Medical-technol.jpg);
     header{
         @include flex();
         padding-left: 80px;
@@ -133,7 +136,7 @@ section.top{
                 padding-top: 30px;
                 width: 310px;
 
-                button{
+                a.button{
                 color: $white;
                 padding: 17px 47px;
                 background-color: $red;
@@ -144,6 +147,7 @@ section.top{
                 font-size: $head_li;
                 font-weight: 700;
                 cursor: pointer;
+                text-decoration: none;
                 }
 
                 a.more{
@@ -151,6 +155,7 @@ section.top{
                     font-weight: 600;
                     text-transform: capitalize;
                     position: relative;
+                    text-decoration: none;
 
                     &::after{
                         content: "";
@@ -348,4 +353,10 @@ section.top{
     }
 
 
+}
+
+#copy{
+    text-align: center;
+    padding-bottom: 5px;
+    color: $pcolor;
 }

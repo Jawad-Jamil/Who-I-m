@@ -24,10 +24,10 @@ h1, h2, h3, h4, h5, h6 {
 
 section {
   padding-top: 80px;
-  padding-bottom: 80px;
+  padding-bottom: 20px;
 }
 
-section.top {
+body {
   background-image: url(https://i.ibb.co/mJ1sYRB/Vector-hexagons-pattern-Geometric-abstract-background-with-simple-hexagonal-elements-Medical-technol.jpg);
 }
 
@@ -127,7 +127,7 @@ section.top section.slider .left_slide .but_a_wrapper {
   width: 310px;
 }
 
-section.top section.slider .left_slide .but_a_wrapper button {
+section.top section.slider .left_slide .but_a_wrapper a.button {
   color: #FFFFFF;
   padding: 17px 47px;
   background-color: #EF5C6E;
@@ -138,6 +138,7 @@ section.top section.slider .left_slide .but_a_wrapper button {
   font-size: 15px;
   font-weight: 700;
   cursor: pointer;
+  text-decoration: none;
 }
 
 section.top section.slider .left_slide .but_a_wrapper a.more {
@@ -145,6 +146,7 @@ section.top section.slider .left_slide .but_a_wrapper a.more {
   font-weight: 600;
   text-transform: capitalize;
   position: relative;
+  text-decoration: none;
 }
 
 section.top section.slider .left_slide .but_a_wrapper a.more::after {
@@ -386,5 +388,11 @@ section.top section.slider .socials .social_wrapper a span {
   font-weight: 700;
   text-transform: capitalize;
   padding-left: 2px;
+}
+
+#copy {
+  text-align: center;
+  padding-bottom: 5px;
+  color: #7A7595;
 }
 /*# sourceMappingURL=style.css.map */
