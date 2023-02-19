@@ -9,23 +9,24 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="shortcut icon" href="Images/fav.png" type="image/x-icon">
     <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="Responsive/responsive.css">
 </head>
 
 <body>
     <section class="top">
-        <header class="container">
+        <header id="header" class="container">
             <div class="lgo">
                 <img src="Images/logo.png" alt="logo">
             </div>
 
             <ul class="head_ul col-8">
-                <li><a href="#" class="active">home</a></li>
-                <li><a href="#">about</a></li>
-                <li><a href="#">portfolio</a></li>
-                <li><a href="#">service</a></li>
-                <li><a href="http://easyinfo360.blogspot.com/" target="_blank">blog</a></li>
-                <li><a href="#">contact</a></li>
-                <li><a href="#" class="download">download <span>cv</span></a></li>
+                <li id="home"><a href="#" class="active">home</a></li>
+                <li id="about"><a href="https://easyinfo360.blogspot.com/p/about-me.html">about</a></li>
+                <li id="portfolio"><a href="#">portfolio</a></li>
+                <li id="service"><a href="#">service</a></li>
+                <li id="blog"><a href="http://easyinfo360.blogspot.com/" target="_blank">blog</a></li>
+                <li id="contact"><a href="#">contact</a></li>
+                <li id="cv"><a href="https://drive.google.com/uc?export=download&id=1WjZu0xwz2uOrynNFLSOhte7R7vvggrz1" class="download">download <span>cv</span></a></li>
             </ul>
         </header>
 
@@ -39,8 +40,8 @@
                     <p>You can contact with me to make a beautiful website for your company.</p>
                     
                     <div class="but_a_wrapper d-flex align-items-center justify-content-between">
-                        <button>hire me</button>
-                        <a class="more">more about me</a>
+                        <a href="mailto:md.jawadjamil@gmail.com" class="button">hire me</a>
+                        <a target="_blank" class="more" href="https://easyinfo360.blogspot.com/p/about-me.html">more about me</a>
                     </div>
 
                 </div>
@@ -49,7 +50,7 @@
                     <div class="pic_wrapper">
 
                         <div class="img_wrapper">
-                            <img src="https://raw.githubusercontent.com/Jawad-Jamil/Who-I-m/main/Images/jawad_Web.jpg" alt="Pic">
+                            <img id="jawad" src="https://raw.githubusercontent.com/Jawad-Jamil/Who-I-m/main/Images/jawad_Web.jpg" alt="Pic">
 
                             <div class="overlay"></div>
                             <div class="outline">
@@ -112,8 +113,13 @@
             </ul>
         </section>
 
-    </section>
 
+
+    </section>
+        <div id="copy">
+            &#169; 2023 Md. Jawad Jamil
+All rights reserved.
+        </div>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
